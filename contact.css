@@ -1,0 +1,869 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ------ Media Query ------ */
+@media (max-width: 2561px) {
+    html,body {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;  
+    }
+}
+section {
+    background-image: url(images/heros-bg-2.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 670px;
+    position: relative;
+}
+/* ------ Media Query ------ */
+@media screen and (min-width: 2000px) and (max-width: 2561px) {
+    section {
+        width: 100%;
+        height: 1000px;
+    }
+}
+
+section .waves {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+section .overlay  {
+    
+}
+
+nav {
+    top: 0;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    transition: 1s ease;
+}
+.white {
+    top: 0;
+    background-color: #000000;
+    z-index: 999; 
+}
+/* Navbar Brand Logo */
+.navbar-brand label {
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    white-space: nowrap;
+    line-height: 100px;
+    padding-left: 180px;
+    letter-spacing: -3px;
+}
+/* ------ Media Query ------ */
+@media screen and (min-width: 2000px) and (max-width: 2561px) {
+    .navbar-brand label {
+        padding-left: 650px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 1024px) {
+    .navbar-brand label {
+        padding-left: 50px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 992px) {
+    .navbar-brand label {
+        line-height: 60px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 768px) {
+    .navbar-brand label {
+        padding-left: 20px;
+    }
+}
+.navbar-brand label span {
+    color: #d1002c;
+}
+
+nav ul {
+    float: right;
+    margin-right: 220px;
+    list-style-type: none;
+}
+/* ------ Media Query ------ */
+@media screen and (min-width: 2000px) and (max-width: 2561px) {
+    nav ul {
+        margin-right: 500px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 1024px) {
+    nav ul {
+        margin-right: 30px;
+    }
+}
+nav ul li {
+    display: inline-block;
+    line-height: 100px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 1 !important;
+}
+.active > a {
+    color: #d1002c;
+}
+nav ul li a:hover {
+    color: #d1002c;
+}
+
+/* Responsive Icon Part */
+#checkbtn {
+    float: right;
+    line-height: 80px;
+    margin-right: 10px;
+    font-size: 30px;
+    color: #fff;
+    display: none
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 992px) {
+    #checkbtn {
+        line-height: 60px;
+    }
+}
+#check {
+    display: none;
+}
+#check:checked ~ ul {
+    top: 0;
+}
+/* ------ Media Query ------ */
+@media (max-width: 992px) {
+    nav {
+        background-color: #000000;
+        width: 100%;
+        height: 65px;
+        z-index: 999;
+    }
+    #checkbtn {
+        display: block;
+    }
+    nav ul {
+        width: 100%;
+        height: 200px;
+        background-color: #000000;
+        margin-top: 65px;
+        position: fixed;
+        top: -100%;
+        transition: .5s;
+    }
+    nav ul li {
+        display: block;
+        text-align: center;
+        line-height: 35px;
+        
+    }
+    nav ul li a {
+        font-size: 12px;
+    }
+}
+/* Heros Text Part */
+.heros-text {
+    padding-top: 420px;
+    padding-left: 180px;
+}
+/* ------ Media Query ------ */
+@media screen and (min-width: 2000px) and (max-width: 2561px) {
+    .heros-text {
+        padding-top: 300px;
+        padding-left: 650px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 1024px) {
+    .heros-text {
+        padding-left: 50px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 768px) {
+    .heros-text {
+        padding-left: 20px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 426px) {
+    .heros-text {
+        padding-left: 20px;
+    }
+}
+.heros-text h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 800;
+    position: relative;
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 426px) {
+    .heros-text h1 {
+        padding-top: 50px;
+        font-size: 25px;
+        font-weight: 700;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 376px) {
+    .heros-text h1 {
+        padding-top: 120px;
+    }
+}
+
+                                    /* Have A Project Section */
+.project-section {
+    width: 100%;
+    height: 700px;
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 768px) {
+    .project-section {
+        width: 100%;
+        height: 1100px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 426px) {
+    .project-section {
+        width: 100%;
+        height: 1200px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 321px) {
+    .project-section {
+        width: 100%;
+        height: 1250px;
+    }
+}
+/* Text Part */
+.project-text {
+    text-align: center;
+    margin-top: 100px;
+}
+.project-text span {
+    display: inline-block;
+    margin-bottom: 0;
+    color: #d1002c;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+}
+.project-text h2 {
+    font-size: 36px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem !important;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.8);
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 321px) {
+    .project-text h2 {
+        font-size: 30px;
+    }
+}
+.project-text p {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #a0a0b4;
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 321px) {
+    .project-text p br {
+        display: none;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 321px) {
+    .project-text p {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+/* Main */
+.main {
+    display: flex;
+    justify-content: center;
+}
+/* ------ Media Query ------ */
+@media screen and (min-width: 2000px) and (max-width: 2561px) {
+    .main {
+        display: flex;
+        justify-content: center;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 768px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* Form Part */
+.form {
+    width: 600px;
+    height: 450px;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+    background: #f3f3f3;
+    margin-left: 0;
+}
+/* ------ Media Query ------ */
+@media screen and (min-width: 2000px) and (max-width: 2561px) {
+    .form {
+        margin-left: 0;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 768px) {
+    .form {
+        width: 92%;
+        margin-left: 30px;
+        margin-bottom: 50px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 426px) {
+    .form {
+        width: 86%;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 321px) {
+    .form {
+        margin-left: 23px;
+    }
+}
+/* Form Name */
+.name {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 40px;
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 426px) {
+    .name {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 321px) {
+    .name {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+.name input {
+    background: #fff !important;
+    font-size: 14px;
+    border-radius: 2px;
+    box-shadow: none !important;
+    border: none;
+    padding: 10px 20px;
+    width: 230px !important;
+    height: 52px !important;
+    color: #000000 !important;
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 768px) {
+    .name input {
+        width: 270px !important;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 426px) {
+    .name input {
+        width: 150px !important;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 375px) {
+    .name input {
+        width: 135px !important;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 321px) {
+    .name input {
+        width: 125px !important;
+    }
+}
+/* Form Subject */
+.subject {
+    margin-top: 20px;
+    margin-left: 60px;
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 426px) {
+    .subject {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 321px) {
+    .subject {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+.subject input {
+    background: #fff !important;
+    font-size: 14px;
+    border-radius: 2px;
+    box-shadow: none !important;
+    border: none;
+    padding: 10px 20px;
+    width: 485px !important;
+    height: 52px !important;
+    color: #000000 !important; 
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 768px) {
+    .subject input {
+        width: 585px !important;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 426px) {
+    .subject input {
+        width: 325px !important;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 412px) {
+    .subject input {
+        width: 311px !important;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 375px) {
+    .subject input {
+        width: 280px !important;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 321px) {
+    .subject input {
+        width: 262px !important;
+    }
+}
+/* Form Message */
+.message {
+    margin-top: 20px;
+    margin-left: 60px;
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 426px) {
+    .message {
+        margin-left: 20px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 426px) {
+    .message {
+        margin-left: 5px;
+    }
+}
+.message textarea {
+    background: #fff !important;
+    font-size: 14px;
+    border-radius: 2px;
+    box-shadow: none !important;
+    border: none;
+    padding: 10px 20px;
+    width: 485px !important;
+    height: 150px !important;
+    color: #000000 !important; 
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 768px) {
+    .message textarea {
+        width: 585px !important;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 426px) {
+    .message textarea {
+        width: 325px !important;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 412px) {
+    .message textarea {
+        width: 311px !important;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 375px) {
+    .message textarea {
+        width: 280px !important;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 321px) {
+    .message textarea {
+        width: 262px !important;
+    }
+}
+/* Form Button */
+.form-button {
+    margin-top: 25px;
+    margin-left: 60px;
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 426px) {
+    .form-button {
+        margin-left: 20px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 321px) {
+    .form-button {
+        margin-left: 5px;
+    }
+}
+.form-button a {
+    background: #d1002c !important;
+    border: 1px solid #d1002c !important;
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 16px 40px;
+    border-radius: 3px;
+}
+
+/* Form Text Part */
+.form-text {
+    margin-left: 50px;
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 768px) {
+    .form-text {
+        margin-left: 30px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 321px) {
+    .form-text {
+        margin-left: 23px;
+    }
+}
+/* First Text Address */
+.text-address {
+    display: flex;
+    margin-bottom: 30px;
+}
+.map{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #d1002c;
+    padding: 10px 17px;
+    margin-right: 20px;
+}
+.map span {
+    font-size: 20px;
+    color: #fff;
+}
+
+.map-text span {
+    display: block;
+    line-height: 1.2;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000000;
+}
+.map-text p {
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: #a0a0b4;
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 321px) {
+    .map-text p br {
+        display: none;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (max-width: 321px) {
+    .map-text p {
+        margin-right: 8px;
+    }
+}
+/* Second Text Phone */
+.text-phone {
+    display: flex;
+    margin-bottom: 70px;
+}
+.phone{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #d1002c;
+    padding: 10px 15px;
+    margin-right: 20px;
+}
+.phone span {
+    font-size: 20px;
+    color: #fff;
+}
+
+.phone-text span {
+    display: block;
+    line-height: 1.2;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000000;
+}
+.phone-text a {
+    text-decoration: none;
+    color: #d1002c;
+    font-size: 16px;
+    font-weight: 450;
+}
+
+                                      /* Footer Section */
+ /* Footer Part */
+ .footer-section {
+    width: 100%;
+    height: 500px;
+    background-color: black;
+}
+/* ------ Media Query ------ */
+@media screen and (min-width: 2000px) and (max-width: 2561px) {
+    .footer-section {
+        margin-top: -80px;
+    }
+}
+/* ------ Media Query ------ */
+@media screen and (min-width: 1400px) and (max-width: 1440px) {
+    .footer-section {
+        margin-top: -10px;
+    }
+}
+/* ------ Media Query ------ */
+@media (max-width: 426px) {
+    .footer-section {
+        width: 100%;
+        height: 1200px;
+        margin-top: -10px;
+    }
+}
+/* First Colums */
+.footer-section .first-text {
+    float: left;
+}
+/* ------ Media Query ------ */
+@media (min-width: 2000px) and (max-width: 2561px) {
+    .footer-section .first-text {
+        margin-left: 550px;
+    }
+}
+/* ------ Media Query ------ */
+@media (min-width: 1400px) and  (max-width: 1441px) {
+    .footer-section .first-text {
+        margin-left: 120px;
+    }
+}
+/* ------ Media Query ------ */
+@media (max-width: 1024px) {
+    .footer-section .first-text {
+        margin-left: -120px;
+    }
+}
+/* ------ Media Query ------ */
+@media (max-width: 768px) {
+    .footer-section .first-text {
+        margin-left: -122px;
+    }
+}
+/* ------ Media Query ------ */
+@media (max-width: 426px) {
+    .footer-section .first-text {
+        float: none;
+        margin-left: -158px;
+    }
+}
+.footer-section .first-text h2 {
+    font-family: "Abril Fatface", times, serif;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 110px;
+    padding-left: 220px;
+}
+.footer-section .first-text p {
+    color: rgba(255, 255, 255, 0.7);
+    
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    padding-left: 220px;
+    padding-top: 30px;
+    margin-bottom: 1rem;
+}
+/* Second Colums */
+.footer-section .second-text {
+    float: left;
+}
+/* ------ Media Query ------ */
+@media (max-width: 426px) {
+    .footer-section .second-text {
+        float: none;
+    }
+}
+.footer-section .second-text h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    padding-top: 120px;
+    padding-left: 170px;
+    margin-bottom: 25px;
+    font-family: "Playfair Display", serif;
+}
+/* ------ Media Query ------ */
+@media (max-width: 768px) {
+    .footer-section .second-text h2 {
+        padding-left: 50px;
+    }
+}
+.footer-section .second-text .list-link {
+   font-size: 16px;
+    list-style: none;
+    line-height: 1.8;
+    padding-left: 170px;
+    padding-top: 0px;
+    margin-bottom: 10px;
+}
+/* ------ Media Query ------ */
+@media (max-width: 768px) {
+    .footer-section .second-text .list-link {
+        padding-left: 50px;
+    }
+}
+.footer-section .second-text .list-link a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+}
+
+/* Third Colums */
+.footer-section .third-text {
+    float: left;
+}
+/* ------ Media Query ------ */
+@media (max-width: 426px) {
+    .footer-section .third-text {
+        float: none;
+    }
+}
+.footer-section .third-text h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    padding-top: 120px;
+    padding-left: 100px;
+    margin-bottom: 25px;
+    font-family:  "Playfair Display", serif;
+}
+/* ------ Media Query ------ */
+@media (max-width: 768px) {
+    .footer-section .third-text h2 {
+        padding-left: 50px;
+    }
+}
+.footer-section .third-text .list-link-third {
+    font-size: 16px;
+     list-style: none;
+     line-height: 1.8;
+     padding-left: 100px;
+     padding-top: 0px;
+     margin-bottom: 10px;
+ }
+ /* ------ Media Query ------ */
+@media (max-width: 768px) {
+    .footer-section .third-text .list-link-third {
+        padding-left: 50px;
+    }
+}
+ .footer-section .third-text .list-link-third a {
+     text-decoration: none;
+     color: rgba(255, 255, 255, 0.5);
+     font-weight: 400;
+ }
+
+/* Fourth Colums */
+.footer-section .fourth-text {
+    float: left;
+}
+/* ------ Media Query ------ */
+
+.footer-section .fourth-text h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    padding-top: 120px;
+    padding-left: 100px;
+    margin-bottom: 25px;
+    font-family: "Playfair Display", serif;
+}
+/* ------ Media Query ------ */
+@media (max-width: 768px) {
+    .footer-section .fourth-text h2 {
+        padding-left: 50px;
+    }
+}
+.footer-section .fourth-text .list-link-fourth {
+    font-size: 16px;
+     list-style: none;
+     line-height: 1.8;
+     padding-left: 100px;
+     padding-top: 0px;
+     margin-bottom: 10px;  
+ }
+  /* ------ Media Query ------ */
+@media (max-width: 768px) {
+    .footer-section .fourth-text .list-link-fourth {
+        padding-left: 50px;
+    }
+}
+ .footer-section .fourth-text .list-link-fourth a {
+     text-decoration: none;
+     color: rgba(255, 255, 255, 0.5);
+     font-weight: 400;
+ }
+
+.footer-section p {
+    float: none;
+}
